@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suipurr Coin - The Playful Future of Cryptocurrency</title>
+    
+    <!-- SEO Meta-Tags -->
+    <meta name="description" content="Suipurr Coin combines the power of the SUI blockchain with the playful spirit of the internet. Join the Suipurr community for the future of cryptocurrency.">
+    <meta name="keywords" content="Suipurr, Meme Coin, Cryptocurrency, Crypto, Blockchain, SUI, Community Coin, Playful Crypto, Digital Currency">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Suipurr Team">
+
+    <!-- Open Graph Meta Tags for better social media sharing -->
+    <meta property="og:title" content="Suipurr Coin - The Playful Future of Cryptocurrency">
+    <meta property="og:description" content="Join the Suipurr community for a fun and powerful experience on the SUI blockchain.">
+    <meta property="og:image" content="logo.webp">
+    <meta property="og:url" content="https://www.suipurrcoin.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Font (Fredoka One) -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- Google Font (Lato for body text) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            overflow-x: hidden;
+            background-color: #282c34;
+            color: #fff;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+        }
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 20px 0;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        h1 {
+            margin-top: 10px;
+            font-family: 'Fredoka One', cursive;
+            font-size: 2.5em;
+        }
+        section.hero {
+            background: linear-gradient(135deg, #0077b6, #5a189a); /* Schöne Farbübergänge */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding-top: 80px;
+        }
+        section.hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        section.hero p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            color: #ddd;
+        }
+
+        /* Puls-Effekt für den Text in der Banderole */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .construction-note span {
+            display: inline-block;
+            animation: pulse 3s infinite; /* Pulsierende Animation */
+        }
+
+        .construction-note {
+            font-size: 1.4em;
+            color: #fff;
+            padding: 15px;
+            border: 5px solid transparent;
+            border-image: repeating-linear-gradient(
+                45deg,
+                #ffcc00,
+                #ffcc00 10px,
+                #000 10px,
+                #000 20px
+            ) 30;
+            display: inline-block;
+            margin-top: 20px;
+            font-style: italic;
+            position: relative;
+        }
+
+        section.info {
+            padding: 80px 20px;
+            background-color: #333;
+            color: #ddd;
+        }
+        section.info h3 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00aaff;
+            font-family: 'Fredoka One', cursive;
+        }
+        section.info p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            line-height: 1.6; /* Erhöhter Zeilenabstand für bessere Lesbarkeit */
+        }
+
+        /* Boxen-Styling mit Schatten und Hover-Effekt */
+        .feature-box {
+            background-color: #f0f4f8;
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+            margin: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover-Effekt */
+        .feature-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-box h4 {
+            color: #00aaff;
+            font-family: 'Fredoka One', cursive;
+        }
+
+        /* Call-to-Action Button */
+        .cta-button {
+            background-color: #0077b6;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #005f8f;
+        }
+
+        /* Fixierter Call-to-Action Button */
+        .cta-button-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff8800;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1em;
+            text-transform: uppercase;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        .cta-button-fixed:hover {
+            background-color: #ff6600;
+        }
+
+        footer {
+            background-color: #004d66;
+            color: white;
+            padding: 30px 0;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        .social-links {
+            margin-top: 15px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .social-links img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Media Queries for mobile devices */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            section.hero h2 {
+                font-size: 1.8em;
+            }
+            section.hero p {
+                font-size: 1em;
+            }
+            .logo {
+                width: 120px;
+            }
+            .construction-note {
+                font-size: 1.2em;
+            }
+            section.info h3 {
+                font-size: 1.8em;
+            }
+            section.info p {
+                font-size: 1em;
+            }
+            .feature-box {
+                width: 90%;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.webp" alt="Suipurr Logo" class="logo">
+        <h1>Suipurr</h1>
+    </header>
+
+    <section class="hero">
+        <h2>The Purring Future of Cryptocurrency</h2>
+        <p>Suipurr Coin combines the power of the SUI blockchain with the playful spirit of the internet.</p>
+        <p class="construction-note">
+            <span>We building something cool! Stay tuned! 🚧👷‍♂️</span>
+        </p>
+    </section>
+
+    <section class="info">
+        <h3>Why Choose Suipurr?</h3>
+        <p>Suipurr Coin is not just another meme coin. It's built on the powerful SUI blockchain, offering scalability, security, and fun. With Suipurr, you get more than just a cryptocurrency—you're part of a thriving, playful community.</p>
+        <div class="features">
+            <div class="feature-box">
+                <h4>Built on SUI</h4>
+                <p>Suipurr leverages the speed and efficiency of the SUI blockchain to ensure lightning-fast transactions.</p>
+            </div>
+            <div class="feature-box">
+                <h4>Community Driven</h4>
+                <p>We believe in the power of community. Our holders influence the future of Suipurr.</p>
+            </div>
+            <div class="feature-box">
+                <h4>Playful & Secure</h4>
+                <p>Suipurr combines fun with functionality, making blockchain accessible and engaging for everyone.</p>
+            </div>
+        </div>
+        <a href="#" class="cta-button">Join the Community</a> <!-- Call-to-Action Button -->
+    </section>
+
+    <footer>
+        <p>© 2024 Suipurr Coin. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="https://discord.com"><img src="discord-icon.png" alt="Discord"></a>
+        </div>
+    </footer>
+
+    <!-- Fixierter Call-to-Action Button unten rechts -->
+    <a href="#" class="cta-button-fixed">Join the Community</a>
+
+</body>
+</html>
